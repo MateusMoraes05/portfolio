@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import {TextDivisor} from '@/modules/textDivisor'
+import { TextDivisor } from '@/modules/textDivisor'
 
 export default function Home() {
   return (
@@ -17,14 +17,14 @@ export default function Home() {
           <div className={styles.conteudo_menuHorizontal}>
             <h4>Mateus' Portfolio</h4>
             <div className={styles.rotas_menuHorizontal}>
-              <a href=""><p>Sobre</p></a>
-              <a href=""><p>Repositórios</p></a>
-              <a href=""><p>Contato</p></a>
+              <a href="#sobre"><p>Sobre</p></a>
+              <a href="#repositorios"><p>Repositórios</p></a>
+              <a href="#contato"><p>Contato</p></a>
             </div>
           </div>
         </div>
         <div className={styles.container}>
-          <div className={styles.initialSection}>
+          <div className={styles.initialSection} id="inicio">
             <div className={styles.textos_initialSection}>
               <h1>Hello, World!</h1>
               <TextDivisor largura={120} />
@@ -34,13 +34,37 @@ export default function Home() {
               <Image src={require('@/assets/ilustrations/ilustration_computerGuy.png')} alt='Homem com headset usando um computador' />
             </div>
           </div>
-          <div className={styles.sobreSection}>
-
+          <TextDivisor largura={200} />
+          <div className={styles.sobreSection} id="sobre">
+            <div className={styles.textos_sobreSection}>
+              <h1>Sobre</h1>
+              <TextDivisor largura={70} />
+              <h5>Olá! Eu me chamo Mateus, tenho 17 anos e sou apaixonado por programação. Atualmente participo de projetos como programador Full-Stack, com enfâse em FrameWorks JavaScript. Tenho experiência em Node.js, React, React Native, Next.js, Git e MySql.</h5>
+            </div>
+            <div className={styles.ilustracao_sobreSection}>
+              <Image src={require('@/assets/ilustrations/ilustration_watchGuy.png')} alt='Homem em pé olhando para seu relógio de pulso' width={170} />
+            </div>
           </div>
-          <div className={styles.repositoriosSection}>
+          <TextDivisor largura={200} />
+          <div className={styles.repositoriosSection} id="repositorios">
+            <div className={styles.cards_repositoriosSection}>
+              <h1>Repositórios</h1>
+              <TextDivisor largura={140} />
+              <div className={styles.conteudo_repositoriosSection}>
+                <div className={styles.cardsBox}>
+                  <Image src={require('@/assets/icons/icon_arrowLeft.png')} alt="Seta Esquerda" />
+                  <div className={styles.card}>
 
+                  </div>
+                  <Image src={require('@/assets/icons/icon_arrowRight.png')} alt="Seta Direita" />
+                </div>
+                <div className={styles.ilustracao_repositoriosSection}>
+                  <Image src={require('@/assets/ilustrations/ilustration_devices.png')} alt='Notebook e Celular da Apple' />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className={styles.contatoSection}>
+          <div className={styles.contatoSection} id="contato">
 
           </div>
         </div>
