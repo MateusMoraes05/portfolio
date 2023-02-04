@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
+import {TextDivisor} from '@/modules/textDivisor'
 
 export default function Home() {
   return (
@@ -24,7 +25,14 @@ export default function Home() {
         </div>
         <div className={styles.container}>
           <div className={styles.initialSection}>
-
+            <div className={styles.textos_initialSection}>
+              <h1>Hello, World!</h1>
+              <TextDivisor largura={120} />
+              <h5>Amo Programação,<br />Academia e Pizza </h5>
+            </div>
+            <div className={styles.ilustracao_initialSection}>
+              <Image src={require('@/assets/ilustrations/ilustration_computerGuy.png')} alt='Homem com headset usando um computador' />
+            </div>
           </div>
           <div className={styles.sobreSection}>
 

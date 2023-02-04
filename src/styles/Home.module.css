@@ -2,6 +2,7 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.95);
+  color: #fff;
 }
 
 .menuHorizontal {
@@ -12,7 +13,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
 }
 
 .conteudo_menuHorizontal {
@@ -33,6 +33,7 @@
 
 .rotas_menuHorizontal a {
   text-decoration: none;
+  margin-top: 100;
   color: #fff;
 }
 
@@ -40,4 +41,28 @@
   width: 95%;
   max-width: 1200px;
   margin: auto;
+
+}
+
+.initialSection {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textos_initialSection  {
+  width: 50%;
+}
+
+.textos_initialSection h5{
+  margin-top: 10px;
+}
+
+.ilustracao_initialSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
