@@ -132,10 +132,57 @@
   height: 200px;
   background-color: #1d1d1d;
   border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+}
+
+.seta {
+  cursor: pointer;
+}
+
+.emBreve {
+  width: 100%;
+  height: 20%;
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
 }
 
 .ilustracao_repositoriosSection {
   width: 50%;
   display: flex;
   align-items: center;
+}
+
+.contatoSection {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textos_contatoSection {
+  width: 50%;
+}
+
+.contato_textos_contatoSection {
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin-top: 40px;
+}
+
+.ilustracao_contatoSection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }

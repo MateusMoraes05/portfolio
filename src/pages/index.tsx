@@ -52,11 +52,13 @@ export default function Home() {
               <TextDivisor largura={140} />
               <div className={styles.conteudo_repositoriosSection}>
                 <div className={styles.cardsBox}>
-                  <Image src={require('@/assets/icons/icon_arrowLeft.png')} alt="Seta Esquerda" />
+                  <Image src={require('@/assets/icons/icon_arrowLeft.png')} alt="Seta Esquerda" className={styles.seta}/>
                   <div className={styles.card}>
-
+                    <div className={styles.emBreve}>
+                      <h4>Em breve</h4>
+                    </div>
                   </div>
-                  <Image src={require('@/assets/icons/icon_arrowRight.png')} alt="Seta Direita" />
+                  <Image src={require('@/assets/icons/icon_arrowRight.png')} alt="Seta Direita" className={styles.seta}/>
                 </div>
                 <div className={styles.ilustracao_repositoriosSection}>
                   <Image src={require('@/assets/ilustrations/ilustration_devices.png')} alt='Notebook e Celular da Apple' />
@@ -64,8 +66,23 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <TextDivisor largura={200} />
           <div className={styles.contatoSection} id="contato">
-
+          <div className={styles.textos_contatoSection}>
+              <h1>Contato</h1>
+              <TextDivisor largura={120} />
+              <div className={styles.contato_textos_contatoSection}>
+                <h4>oliveiramoraes05@gmail.com</h4>
+                <h4>(11) 970567059</h4>
+                <div>
+                  <a href="https://www.linkedin.com/in/mateus-moraes-de-oliveira-4667aa18a/" target="_blank"><Image src={require('@/assets/ilustrations/ilustration_linkedin.png')} width={80} alt="logo linkedin"/></a>
+                  <a href="https://github.com/MateusMoraes05/" target="_blank"><Image src={require('@/assets/ilustrations/ilustration_github.png')} width={80} alt="logo github"/></a>
+                </div>
+              </div>
+            </div>
+            <div className={styles.ilustracao_contatoSection}>
+              <Image src={require('@/assets/ilustrations/ilustration_phone.png')} alt='Homem com headset usando um computador' />
+            </div>
           </div>
         </div>
       </main>
