@@ -11,34 +11,29 @@
 
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #fff;
 }
 
-.menuHorizontal_content {
+.conteudo_menuHorizontal {
   width: 95%;
-  height: 15vh;
-  max-width: 1200px;
 
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.menuHorizontal_content_caixa_logo {
-  width: 30%;
-}
-
-.menuHorizontal_content_logo {
-  font-weight: 800;
-}
-
-.menuHorizontal_content_caixa_rotas {
+.rotas_menuHorizontal {
+  width: 40%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 
-  width: 45%;
+  justify-content: space-between;
+}
+
+.rotas_menuHorizontal a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .container {
