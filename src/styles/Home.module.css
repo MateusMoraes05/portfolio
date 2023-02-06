@@ -186,3 +186,58 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 650px) {
+  .rotas_menuHorizontal {
+    display: none;
+  }
+
+.initialSection {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+  .ilustracao_initialSection {
+  display: none;
+}
+
+.sobreSection {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.ilustracao_sobreSection {
+  display: none;
+}
+
+.cardsBox {
+  width: 100%;
+}
+
+
+.ilustracao_repositoriosSection {
+  display: none;
+}
+
+.contatoSection {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.ilustracao_contatoSection {
+  display: none;
+}
+
+}
